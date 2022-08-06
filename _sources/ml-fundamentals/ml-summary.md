@@ -14,7 +14,7 @@ kernelspec:
 ---
 
 
-# Summary of Machine Learning Fundamentals
+# Summary of machine learning fundamentals
 
 
 ## Machine Learning Landscape : Discriminative Models
@@ -76,3 +76,6 @@ and so on.
 ## Semi-supervised learning
 
 
+<div hidden>
+    https://www.baeldung.com/cs/svm-vs-neural-network
+</div>

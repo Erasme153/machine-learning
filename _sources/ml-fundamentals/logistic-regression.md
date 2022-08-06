@@ -13,4 +13,13 @@ kernelspec:
   name: python3
 ---
 
-# Logistic Regression (TBD)
+# Logistic regression (TBD)
+
+<div hidden>
+
+
+Metrics will be presented here
+
+</div>
+
+## Cross validation

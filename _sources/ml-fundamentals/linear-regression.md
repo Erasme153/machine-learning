@@ -13,4 +13,19 @@ kernelspec:
   name: python3
 ---
 
-# Linear Regression (TBD)
+# Linear regression (TBD)
+
+
+## Simple
+
+## Multiple
+
+## Polynomial
+
+
+<div hidden>
+
+
+Metrics will be presented here
+
+</div>

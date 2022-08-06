@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>21. Machine Learning productionization &#8212; Machine Learning Open Course</title>
+    <title>23. Machine Learning productionization &#8212; Machine Learning Open Course</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/drawio.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/youtube.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,6 +54,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <script src="https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js"></script>
@@ -60,8 +63,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="21.1. Overview" href="overview.html" />
-    <link rel="prev" title="20. Summary of Deep Learning (TBD)" href="../deep-learning/dl-summary.html" />
+    <link rel="next" title="23.1. Overview" href="overview.html" />
+    <link rel="prev" title="22. Summary of deep learning (TBD)" href="../deep-learning/dl-summary.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -115,7 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  PYTHON BASICS
+  PREREQUISITES
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -127,28 +130,28 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  MACHINE LEARNING FUNDAMENTALS
+  FUNDAMENTALS OF MACHINE LEARNING
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../ml-fundamentals/ml-overview.html">
-   2. Machine Learning Overview (TBD)
+   2. Machine learning overview (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../ml-fundamentals/linear-regression.html">
-   3. Linear Regression (TBD)
+   3. Linear regression (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../ml-fundamentals/logistic-regression.html">
-   4. Logistic Regression (TBD)
+   4. Logistic regression (TBD)
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../ml-fundamentals/parameter-optimization.html">
-   5. Parameter Optimization
+  <a class="reference internal" href="../ml-fundamentals/parameter-optimization/parameter-optimization.html">
+   5. Parameter optimization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -157,47 +160,79 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ml-fundamentals/gradient-descent.html">
-     5.1. Gradient Descent
+    <a class="reference internal" href="../ml-fundamentals/parameter-optimization/gradient-descent.html">
+     5.1. Gradient descent
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ml-fundamentals/loss-function.html">
-     5.2. Loss Function
+    <a class="reference internal" href="../ml-fundamentals/parameter-optimization/loss-function.html">
+     5.2. Loss function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ml-fundamentals/neural-network/neural-network.html">
+   6. Neural network
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ml-fundamentals/neural-network/nn-basics.html">
+     6.1. Neural network basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ml-fundamentals/neural-network/nn-hands-on.html">
+     6.2. Hands on neural network
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ml-fundamentals/neural-network/nn-implementation.html">
+     6.3. Neural network implementation from scratch
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../ml-fundamentals/SVM.html">
-   6. SVM
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../ml-fundamentals/neural-network.html">
-   7. Neural Network (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../ml-fundamentals/regularization.html">
-   8. Regularization (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../ml-fundamentals/ml-summary.html">
-   9. Summary of Machine Learning Fundamentals
+   7. Summary of machine learning fundamentals
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  NEURAL NETWORK IMPLEMENTATION FROM SCRATCH
+  ADVANCED MACHINE LEARNING
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../neural-network-implementation-from-scratch/nn-overview.html">
-   10. Neural Network Implementation Overview (TBD)
+  <a class="reference internal" href="../ml-advanced/kernel-method.html">
+   8. Kernel method
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ml-advanced/model-selection.html">
+   9. Model selection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ml-advanced/ensemble-learning.html">
+   10. Ensemble learning
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ml-advanced/unsupervised-learning.html">
+   11. Unsupervised learning (TBD)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ml-advanced/generative-models.html">
+   12. Generative models
   </a>
  </li>
 </ul>
@@ -209,52 +244,52 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/dl-overview.html">
-   11. Deep Learning Overview (TBD)
+   13. Deep learning overview (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/CNN.html">
-   12. CNN (TBD)
+   14. CNN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/GAN.html">
-   13. GAN (TBD)
+   15. GAN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/RNN.html">
-   14. RNN (TBD)
+   16. RNN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/AutoEncoder.html">
-   15. Autoencoder (TBD)
+   17. Autoencoder (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/LSTM.html">
-   16. LSTM (TBD)
+   18. LSTM (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/NLP.html">
-   17. NLP (TBD)
+   19. NLP (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/time-series.html">
-   18. Time Series (TBD)
+   20. Time series (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/DQN.html">
-   19. DQN (TBD)
+   21. DQN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/dl-summary.html">
-   20. Summary of Deep Learning (TBD)
+   22. Summary of deep learning (TBD)
   </a>
  </li>
 </ul>
@@ -266,27 +301,32 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   21. Machine Learning productionization
+   23. Machine Learning productionization
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="overview.html">
-     21.1. Overview
+     23.1. Overview
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="problem-framing.html">
-     21.2. Problem framing
+     23.2. Problem framing
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="data-engineering.html">
-     21.3. Data engineering
+     23.3. Data engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="model-training-and-evaluation.html">
+     23.4. Model training &amp; evaluation
     </a>
    </li>
   </ul>
@@ -299,103 +339,38 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/supporting-overview.html">
-   22. Supporting Materials Overview (TBD)
+  <a class="reference internal" href="../supporting-materials/pytorch.html">
+   24. PyTorch
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../supporting-materials/bamboolib.html">
+   25. Bamboolib
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../supporting-materials/mito.html">
+   26. Mito
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../supporting-materials/KNN.html">
-   23. KNN (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/naive-bayes.html">
-   24. Naive Bayes (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/decision-tree.html">
-   25. Decision Tree (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/ensemble-learning.html">
-   26. Ensemble Learning (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/boosting.html">
-   27. Boosting (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/unsupervised-learning.html">
-   28. Unsupervised Learning (TBD)
+   27. KNN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../supporting-materials/semi-supervised-learning.html">
-   29. Semi-supervised learning (TBD)
+   28. Semi-supervised learning (TBD)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/feature-engineering.html">
-   30. Feature Engineering (TBD)
+  <a class="reference internal" href="../supporting-materials/unbalanced-problems.html">
+   29. Unbalanced problems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/feature-selection.html">
-   31. Feature Selection (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/feature-transformation.html">
-   32. Feature Transformation (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/feature-reduction.html">
-   33. Feature Reduction (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/PCA.html">
-   34. PCA (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/LDA.html">
-   35. LDA (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/QDA.html">
-   36. QDA (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/T-SNE.html">
-   37. T-SNE (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/DBSCAN.html">
-   38. DBSCAN (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/k-means.html">
-   39. K-means (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/newton-s-method.html">
-   40. Newton’s Method (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/metrics.html">
-   41. Metrics (TBD)
+  <a class="reference internal" href="../supporting-materials/automl.html">
+   30. AutoML (TBD)
   </a>
  </li>
 </ul>
@@ -407,32 +382,47 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../assignments/intro.html">
-   42. Assignments
+   31. Assignments
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../assignments/setup.html">
-     42.1. Setup
+     31.1. Setup
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../assignments/python-programming-basics.html">
-     42.2. Python Programming Basics
+     31.2. Python Programming Basics
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../assignments/project-plan-template.html">
-     42.3. Project Plan​ Template
+     31.3. Project Plan​ Template
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../assignments/machine-learning-productionization/data-engineering.html">
-     42.4. Data engineering
+     31.4. Data engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../assignments/machine-learning-productionization/counterintuitive-challenges-in-ml-debugging.html">
+     31.5. Counterintuitive Challenges in ML Debugging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../assignments/machine-learning-productionization/debugging-in-classification.html">
+     31.6. Case Study: Debugging in Classification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../assignments/machine-learning-productionization/debugging-in-regression.html">
+     31.7. Case Study: Debugging in Regression
     </a>
    </li>
   </ul>
@@ -634,14 +624,15 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="machine-learning-productionization">
-<h1><span class="section-number">21. </span>Machine Learning productionization<a class="headerlink" href="#machine-learning-productionization" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">23. </span>Machine Learning productionization<a class="headerlink" href="#machine-learning-productionization" title="Permalink to this headline">#</a></h1>
 <p>Moving Machine Learning models into production is as important as building them, sometimes even harder. Maintaining data quality and model accuracy over time are just a few of the challenges. To achieve end-to-end system productionization as a whole, the various components and designs need to be identified, from defining a problem to serving the model as a service.</p>
 <p>This chapter combines the foundational concepts of machine learning with the functional expertise of modern software development and engineering to help you develop production-ready Machine Learning knowledge.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">21.1. Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="problem-framing.html">21.2. Problem framing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-engineering.html">21.3. Data engineering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">23.1. Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem-framing.html">23.2. Problem framing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-engineering.html">23.3. Data engineering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model-training-and-evaluation.html">23.4. Model training &amp; evaluation</a></li>
 </ul>
 </div>
 </section>
@@ -683,13 +674,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">20. </span>Summary of Deep Learning (TBD)</p>
+            <p class="prev-next-title"><span class="section-number">22. </span>Summary of deep learning (TBD)</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="overview.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">21.1. </span>Overview</p>
+        <p class="prev-next-title"><span class="section-number">23.1. </span>Overview</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

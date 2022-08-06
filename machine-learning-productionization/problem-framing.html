@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>21.2. Problem framing &#8212; Machine Learning Open Course</title>
+    <title>23.2. Problem framing &#8212; Machine Learning Open Course</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/drawio.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/youtube.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,6 +54,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <script src="https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js"></script>
@@ -60,8 +63,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="21.3. Data engineering" href="data-engineering.html" />
-    <link rel="prev" title="21.1. Overview" href="overview.html" />
+    <link rel="next" title="23.3. Data engineering" href="data-engineering.html" />
+    <link rel="prev" title="23.1. Overview" href="overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -115,7 +118,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  PYTHON BASICS
+  PREREQUISITES
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -127,28 +130,28 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  MACHINE LEARNING FUNDAMENTALS
+  FUNDAMENTALS OF MACHINE LEARNING
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../ml-fundamentals/ml-overview.html">
-   2. Machine Learning Overview (TBD)
+   2. Machine learning overview (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../ml-fundamentals/linear-regression.html">
-   3. Linear Regression (TBD)
+   3. Linear regression (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../ml-fundamentals/logistic-regression.html">
-   4. Logistic Regression (TBD)
+   4. Logistic regression (TBD)
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../ml-fundamentals/parameter-optimization.html">
-   5. Parameter Optimization
+  <a class="reference internal" href="../ml-fundamentals/parameter-optimization/parameter-optimization.html">
+   5. Parameter optimization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -157,47 +160,79 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ml-fundamentals/gradient-descent.html">
-     5.1. Gradient Descent
+    <a class="reference internal" href="../ml-fundamentals/parameter-optimization/gradient-descent.html">
+     5.1. Gradient descent
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ml-fundamentals/loss-function.html">
-     5.2. Loss Function
+    <a class="reference internal" href="../ml-fundamentals/parameter-optimization/loss-function.html">
+     5.2. Loss function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ml-fundamentals/neural-network/neural-network.html">
+   6. Neural network
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ml-fundamentals/neural-network/nn-basics.html">
+     6.1. Neural network basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ml-fundamentals/neural-network/nn-hands-on.html">
+     6.2. Hands on neural network
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ml-fundamentals/neural-network/nn-implementation.html">
+     6.3. Neural network implementation from scratch
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../ml-fundamentals/SVM.html">
-   6. SVM
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../ml-fundamentals/neural-network.html">
-   7. Neural Network (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../ml-fundamentals/regularization.html">
-   8. Regularization (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="../ml-fundamentals/ml-summary.html">
-   9. Summary of Machine Learning Fundamentals
+   7. Summary of machine learning fundamentals
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  NEURAL NETWORK IMPLEMENTATION FROM SCRATCH
+  ADVANCED MACHINE LEARNING
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../neural-network-implementation-from-scratch/nn-overview.html">
-   10. Neural Network Implementation Overview (TBD)
+  <a class="reference internal" href="../ml-advanced/kernel-method.html">
+   8. Kernel method
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ml-advanced/model-selection.html">
+   9. Model selection
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ml-advanced/ensemble-learning.html">
+   10. Ensemble learning
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ml-advanced/unsupervised-learning.html">
+   11. Unsupervised learning (TBD)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../ml-advanced/generative-models.html">
+   12. Generative models
   </a>
  </li>
 </ul>
@@ -209,52 +244,52 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/dl-overview.html">
-   11. Deep Learning Overview (TBD)
+   13. Deep learning overview (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/CNN.html">
-   12. CNN (TBD)
+   14. CNN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/GAN.html">
-   13. GAN (TBD)
+   15. GAN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/RNN.html">
-   14. RNN (TBD)
+   16. RNN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/AutoEncoder.html">
-   15. Autoencoder (TBD)
+   17. Autoencoder (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/LSTM.html">
-   16. LSTM (TBD)
+   18. LSTM (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/NLP.html">
-   17. NLP (TBD)
+   19. NLP (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/time-series.html">
-   18. Time Series (TBD)
+   20. Time series (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/DQN.html">
-   19. DQN (TBD)
+   21. DQN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../deep-learning/dl-summary.html">
-   20. Summary of Deep Learning (TBD)
+   22. Summary of deep learning (TBD)
   </a>
  </li>
 </ul>
@@ -266,27 +301,32 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
-   21. Machine Learning productionization
+   23. Machine Learning productionization
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="overview.html">
-     21.1. Overview
+     23.1. Overview
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     21.2. Problem framing
+     23.2. Problem framing
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="data-engineering.html">
-     21.3. Data engineering
+     23.3. Data engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="model-training-and-evaluation.html">
+     23.4. Model training &amp; evaluation
     </a>
    </li>
   </ul>
@@ -299,103 +339,38 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/supporting-overview.html">
-   22. Supporting Materials Overview (TBD)
+  <a class="reference internal" href="../supporting-materials/pytorch.html">
+   24. PyTorch
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../supporting-materials/bamboolib.html">
+   25. Bamboolib
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../supporting-materials/mito.html">
+   26. Mito
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../supporting-materials/KNN.html">
-   23. KNN (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/naive-bayes.html">
-   24. Naive Bayes (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/decision-tree.html">
-   25. Decision Tree (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/ensemble-learning.html">
-   26. Ensemble Learning (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/boosting.html">
-   27. Boosting (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/unsupervised-learning.html">
-   28. Unsupervised Learning (TBD)
+   27. KNN (TBD)
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../supporting-materials/semi-supervised-learning.html">
-   29. Semi-supervised learning (TBD)
+   28. Semi-supervised learning (TBD)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/feature-engineering.html">
-   30. Feature Engineering (TBD)
+  <a class="reference internal" href="../supporting-materials/unbalanced-problems.html">
+   29. Unbalanced problems
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/feature-selection.html">
-   31. Feature Selection (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/feature-transformation.html">
-   32. Feature Transformation (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/feature-reduction.html">
-   33. Feature Reduction (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/PCA.html">
-   34. PCA (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/LDA.html">
-   35. LDA (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/QDA.html">
-   36. QDA (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/T-SNE.html">
-   37. T-SNE (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/DBSCAN.html">
-   38. DBSCAN (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/k-means.html">
-   39. K-means (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/newton-s-method.html">
-   40. Newton’s Method (TBD)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../supporting-materials/metrics.html">
-   41. Metrics (TBD)
+  <a class="reference internal" href="../supporting-materials/automl.html">
+   30. AutoML (TBD)
   </a>
  </li>
 </ul>
@@ -407,32 +382,47 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../assignments/intro.html">
-   42. Assignments
+   31. Assignments
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../assignments/setup.html">
-     42.1. Setup
+     31.1. Setup
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../assignments/python-programming-basics.html">
-     42.2. Python Programming Basics
+     31.2. Python Programming Basics
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../assignments/project-plan-template.html">
-     42.3. Project Plan​ Template
+     31.3. Project Plan​ Template
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../assignments/machine-learning-productionization/data-engineering.html">
-     42.4. Data engineering
+     31.4. Data engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../assignments/machine-learning-productionization/counterintuitive-challenges-in-ml-debugging.html">
+     31.5. Counterintuitive Challenges in ML Debugging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../assignments/machine-learning-productionization/debugging-in-classification.html">
+     31.6. Case Study: Debugging in Classification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../assignments/machine-learning-productionization/debugging-in-regression.html">
+     31.7. Case Study: Debugging in Regression
     </a>
    </li>
   </ul>
@@ -509,6 +499,24 @@ title="Launch on Binder"
     <img src="../_static/images/logo_binder.svg">
   </span>
 <span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/open-academy/machine-learning/blob/main/open-machine-learning-jupyter-book/machine-learning-productionization/problem-framing.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
 </a>
 
       </li>
@@ -697,32 +705,32 @@ title="Print to PDF"
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#is-machine-learning-the-best-choice">
-   21.2.1. Is Machine Learning the best choice?
+   23.2.1. Is Machine Learning the best choice?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-easy-to-obtain-the-data">
-   21.2.2. How easy to obtain the data?
+   23.2.2. How easy to obtain the data?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-models-to-use">
-   21.2.3. What models to use?
+   23.2.3. What models to use?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-to-put-a-model-into-production">
-   21.2.4. How to put a model into production?
+   23.2.4. How to put a model into production?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#your-turn">
-   21.2.5. Your turn! 🚀
+   23.2.5. Your turn! 🚀
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#self-study">
-   21.2.6. Self study
+   23.2.6. Self study
   </a>
  </li>
 </ul>
@@ -746,32 +754,32 @@ title="Print to PDF"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#is-machine-learning-the-best-choice">
-   21.2.1. Is Machine Learning the best choice?
+   23.2.1. Is Machine Learning the best choice?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-easy-to-obtain-the-data">
-   21.2.2. How easy to obtain the data?
+   23.2.2. How easy to obtain the data?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-models-to-use">
-   21.2.3. What models to use?
+   23.2.3. What models to use?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#how-to-put-a-model-into-production">
-   21.2.4. How to put a model into production?
+   23.2.4. How to put a model into production?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#your-turn">
-   21.2.5. Your turn! 🚀
+   23.2.5. Your turn! 🚀
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#self-study">
-   21.2.6. Self study
+   23.2.6. Self study
   </a>
  </li>
 </ul>
@@ -785,7 +793,7 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="problem-framing">
-<h1><span class="section-number">21.2. </span>Problem framing<a class="headerlink" href="#problem-framing" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">23.2. </span>Problem framing<a class="headerlink" href="#problem-framing" title="Permalink to this headline">#</a></h1>
 <p><strong><a class="reference external" href="https://developers.google.com/machine-learning/problem-framing/problem-framing">Problem framing</a></strong> is the process of analyzing a problem to isolate the individual elements that need to be addressed to solve it. It helps you to determine the feasibility of your project, and clearly defines the project goals and success criteria. Under our context, problem framing is to dive deep into the business requirements to figure out a potential Machine Learning based technical solution.</p>
 <blockquote class="epigraph">
 <div><p>Formal problem framing is the critical beginning for solving an ML problem, as it forces us to better understand both the problem and the data in order to design and build a bridge between them.</p>
@@ -798,23 +806,27 @@ title="Print to PDF"
 </ul>
 <p>Before rushing into the Machine Learning implementation, let’s frame the problem by answering the below questions first.</p>
 <section id="is-machine-learning-the-best-choice">
-<h2><span class="section-number">21.2.1. </span>Is Machine Learning the best choice?<a class="headerlink" href="#is-machine-learning-the-best-choice" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">23.2.1. </span>Is Machine Learning the best choice?<a class="headerlink" href="#is-machine-learning-the-best-choice" title="Permalink to this headline">#</a></h2>
 <p>Machine Learning is not universally applicable. Similar to any other technology, it could only be used to solve certain problems.</p>
 <p><strong>What are the existing solutions?</strong> Machine Learning may be considered either when a problem is new, or existing non-Machine Learning solutions are not optimized. If it is the former, try solving the problem manually using a <a class="reference external" href="https://en.wikipedia.org/wiki/Heuristic">heuristic</a> approach. Otherwise, the existing non-Machine Learning solution could be leveraged as a benchmark to help you make the decision.</p>
-<p><strong>Is the error tolerable?</strong> It is difficult to make the Machine Learning prediction 100% accurate. The small chance of false-negative could be not acceptable sometimes. For example, Deep Learning has been shown to be successful in accelerating MRI reconstruction, over traditional methods. Despite a remarkable improvement in image quality of accelerated MRI, the false-negative reconstruction phenomenon is still present and needs to be improved<span id="id1">[<a class="reference internal" href="#id18" title="Kaiyang Cheng, Francesco Calivá, Rutwik Shah, Misung Han, Sharmila Majumdar, and Valentina Pedoia. Addressing the false negative problem of deep learning mri reconstruction models by adversarial attacks and robust training. In Medical Imaging with Deep Learning, 121–135. PMLR, 2020.">CCalivaS+20</a>]</span>.</p>
-<p><strong>Is concrete interpretability needed?</strong> Machine learning does a great job to improve products, processes, and research. But computers usually do not explain their predictions. The <a class="reference external" href="https://www.technologyreview.com/2017/04/11/5113/the-dark-secret-at-the-heart-of-ai/">dark secret at the heart of AI</a> could be a problem. Conversely, a better explanation could increase the trust in the decision to adopt Machine Learning. But this is still <a class="reference external" href="https://christophm.github.io/interpretable-ml-book/">challenging even to the supervised Machine Learning</a>, let alone Deep Learning<span id="id2">[<a class="reference internal" href="#id19" title="Xuhong Li, Haoyi Xiong, Xingjian Li, Xuanyu Wu, Xiao Zhang, Ji Liu, Jiang Bian, and Dejing Dou. Interpretable deep learning: interpretation, interpretability, trustworthiness, and beyond. arXiv preprint arXiv:2103.10689, 2021.">LXL+21</a>]</span>.</p>
-<p><strong>Any risk to violate ethics or regulation?</strong> AI presents three major areas of ethical concern for society: privacy and surveillance, bias, and discrimination<span id="id3">[<a class="reference internal" href="#id20" title="Christina Pazzanese. Ethical concerns mount as ai takes bigger decision-making role. Dec 2020. URL: https://news.harvard.edu/gazette/story/2020/10/ethical-concerns-mount-as-ai-takes-bigger-decision-making-role/.">Paz20</a>]</span>. For example, the bank, a highly regulated industry, algorithm-driven lending decisions may result in the systematic disparate treatment of African Americans and other marginalized consumers.</p>
+<p><strong>Is the error tolerable?</strong> It is difficult to make the Machine Learning prediction 100% accurate. The small chance of false-negative could be not acceptable sometimes. For example, Deep Learning has been shown to be successful in accelerating MRI reconstruction, over traditional methods. Despite a remarkable improvement in image quality of accelerated MRI, the false-negative reconstruction phenomenon is still present and needs to be improved<span id="id1">[<a class="reference internal" href="#id19" title="Kaiyang Cheng, Francesco Calivá, Rutwik Shah, Misung Han, Sharmila Majumdar, and Valentina Pedoia. Addressing the false negative problem of deep learning mri reconstruction models by adversarial attacks and robust training. In Medical Imaging with Deep Learning, 121–135. PMLR, 2020.">CCalivaS+20</a>]</span>.</p>
+<p><strong>Is concrete interpretability needed?</strong> Machine learning does a great job to improve products, processes, and research. But computers usually do not explain their predictions. The <a class="reference external" href="https://www.technologyreview.com/2017/04/11/5113/the-dark-secret-at-the-heart-of-ai/">dark secret at the heart of AI</a> could be a problem. Conversely, a better explanation could increase the trust in the decision to adopt Machine Learning. But this is still <a class="reference external" href="https://christophm.github.io/interpretable-ml-book/">challenging even to the supervised Machine Learning</a>, let alone Deep Learning<span id="id2">[<a class="reference internal" href="#id20" title="Xuhong Li, Haoyi Xiong, Xingjian Li, Xuanyu Wu, Xiao Zhang, Ji Liu, Jiang Bian, and Dejing Dou. Interpretable deep learning: interpretation, interpretability, trustworthiness, and beyond. arXiv preprint arXiv:2103.10689, 2021.">LXL+21</a>]</span>.</p>
+<p><strong>Any risk to violate ethics or regulation?</strong> AI presents three major areas of ethical concern for society: privacy and surveillance, bias, and discrimination<span id="id3">[<a class="reference internal" href="#id21" title="Christina Pazzanese. Ethical concerns mount as ai takes bigger decision-making role. Dec 2020. URL: https://news.harvard.edu/gazette/story/2020/10/ethical-concerns-mount-as-ai-takes-bigger-decision-making-role/.">Paz20</a>]</span>. For example, the bank, a highly regulated industry, algorithm-driven lending decisions may result in the systematic disparate treatment of African Americans and other marginalized consumers.</p>
 <p><strong>Are any Machine Learning approaches available?</strong> To create a TikTok alike short video platform, <a class="reference external" href="https://aws.amazon.com/rekognition/content-moderation/">Amazon Rekognition</a> could help build AI-powered content moderation easily. And <a class="reference external" href="https://aws.amazon.com/transcribe/">Amazon Transcribe</a> is something ready to use for generating transcripts automatically for customers. To <a class="reference external" href="https://en.wikipedia.org/wiki/Reinventing_the_wheel">reinvent the wheel</a> is resource-wasting and should be avoided always.</p>
-<p><strong>Is Machine Learning cost-effective?</strong> The cost of a Machine Learning solution may be across multiple aspects similar to traditional software development, such as cloud, data, device, human resource, maintenance, etc. Besides, if the team is new to Machine Learning, the additional training cost needs to be considered. If Machine Learning is one of the options, the <a class="reference external" href="https://en.wikipedia.org/wiki/Opportunity_cost">opportunity cost</a> must be in the mind. More specifically, it is remarkably easy to incur massive ongoing maintenance costs at the system level when applying machine learning, including boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, changes in the external world, and a variety of system-level anti-patterns<span id="id4">[<a class="reference internal" href="#id21" title="D. Sculley, Gary Holt, Daniel Golovin, Eugene Davydov, Todd Phillips, Dietmar Ebner, Vinay Chaudhary, and Michael Young. Machine learning: the high interest credit card of technical debt. In SE4ML: Software Engineering for Machine Learning (NIPS 2014 Workshop). 2014.">SHG+14</a>]</span>.</p>
+<p><strong>Is Machine Learning cost-effective?</strong> The cost of a Machine Learning solution may be across multiple aspects similar to traditional software development, such as cloud, data, device, human resource, maintenance, etc. Besides, if the team is new to Machine Learning, the additional training cost needs to be considered. If Machine Learning is one of the options, the <a class="reference external" href="https://en.wikipedia.org/wiki/Opportunity_cost">opportunity cost</a> must be in the mind. More specifically, it is remarkably easy to incur massive ongoing maintenance costs at the system level when applying machine learning, including boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, changes in the external world, and a variety of system-level anti-patterns<span id="id4">[<a class="reference internal" href="#id22" title="D. Sculley, Gary Holt, Daniel Golovin, Eugene Davydov, Todd Phillips, Dietmar Ebner, Vinay Chaudhary, and Michael Young. Machine learning: the high interest credit card of technical debt. In SE4ML: Software Engineering for Machine Learning (NIPS 2014 Workshop). 2014.">SHG+14</a>]</span>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Sculley, David, et al. “<a class="reference external" href="https://proceedings.neurips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html">Hidden technical debt in machine learning systems.</a>” Advances in neural information processing systems 28 (2015).</p>
+</div>
 </section>
 <section id="how-easy-to-obtain-the-data">
-<h2><span class="section-number">21.2.2. </span>How easy to obtain the data?<a class="headerlink" href="#how-easy-to-obtain-the-data" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">23.2.2. </span>How easy to obtain the data?<a class="headerlink" href="#how-easy-to-obtain-the-data" title="Permalink to this headline">#</a></h2>
 <p>It is no doubt that data is the driving force of Machine Learning. Make sure you have the data required to train a model, before initiating the Machine Learning execution. Regardless of the challenge to gather data from your own company or real customers, the options below could be helpful.</p>
-<p><strong><a class="reference external" href="https://en.wikipedia.org/wiki/Synthetic_data">Synthetic data</a></strong>, which is any production data applicable to a given situation that is not obtained by direct measurement<span id="id5">[<a class="reference internal" href="#id22" title="Daniel N Lapedes. McGraw-Hill dictionary of scientific and technical terms. McGraw-Hill Book Co., New York, NY, 1978.">Lap78</a>]</span>. Typically, it is usually generated by a computer simulation. Today, synthetic data becomes more and more important in the entire AI landscape and is even predicted to overshadow real data by 2030<span id="id6">[<a class="reference internal" href="#id23" title="Gartner_Inc. Maverick* research: forget about your real data - synthetic data is the future of ai. URL: https://www.gartner.com/en/documents/4002912.">GartnerInc</a>]</span>. <a class="reference external" href="https://en.wikipedia.org/wiki/Generative_adversarial_network">Generative Adversarial Networks</a>(GANs) are one of the most popular frameworks to generate synthetic data. For example, <a class="reference external" href="https://blogs.nvidia.com/blog/2020/04/23/ford-ai-data/">Ford has combined gaming engines and GANs to create synthetic data for AI training for self-driving</a>. There are other approaches, including statistical distribution fitting, Rule-based procedural generation, benchmarks, simulations, and so on<span id="id7">[<a class="reference internal" href="#id24" title="Jason Anderson. Methods and applications of synthetic data generation. All Dissertations, 2021.">And21</a>]</span>.</p>
+<p><strong><a class="reference external" href="https://en.wikipedia.org/wiki/Synthetic_data">Synthetic data</a></strong>, which is any production data applicable to a given situation that is not obtained by direct measurement<span id="id5">[<a class="reference internal" href="#id23" title="Daniel N Lapedes. McGraw-Hill dictionary of scientific and technical terms. McGraw-Hill Book Co., New York, NY, 1978.">Lap78</a>]</span>. Typically, it is usually generated by a computer simulation. Today, synthetic data becomes more and more important in the entire AI landscape and is even predicted to overshadow real data by 2030<span id="id6">[<a class="reference internal" href="#id24" title="Gartner_Inc. Maverick* research: forget about your real data - synthetic data is the future of ai. URL: https://www.gartner.com/en/documents/4002912.">GartnerInc</a>]</span>. <a class="reference external" href="https://en.wikipedia.org/wiki/Generative_adversarial_network">Generative Adversarial Networks</a>(GANs) are one of the most popular frameworks to generate synthetic data. For example, <a class="reference external" href="https://blogs.nvidia.com/blog/2020/04/23/ford-ai-data/">Ford has combined gaming engines and GANs to create synthetic data for AI training for self-driving</a>. There are other approaches, including statistical distribution fitting, Rule-based procedural generation, benchmarks, simulations, and so on<span id="id7">[<a class="reference internal" href="#id25" title="Jason Anderson. Methods and applications of synthetic data generation. All Dissertations, 2021.">And21</a>]</span>.</p>
 <figure class="align-default" id="synthetic-data-will-completely-overshadow-real-data-in-ai-models">
 <img alt="../_images/gartner-chart.jpeg" src="../_images/gartner-chart.jpeg" />
 <figcaption>
-<p><span class="caption-number">Fig. 21.7 </span><span class="caption-text">Synthetic Data Will Completely Overshadow Real Data in AI Models<span id="id8">[<a class="reference internal" href="#id23" title="Gartner_Inc. Maverick* research: forget about your real data - synthetic data is the future of ai. URL: https://www.gartner.com/en/documents/4002912.">GartnerInc</a>]</span></span><a class="headerlink" href="#synthetic-data-will-completely-overshadow-real-data-in-ai-models" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 23.7 </span><span class="caption-text">Synthetic Data Will Completely Overshadow Real Data in AI Models<span id="id8">[<a class="reference internal" href="#id24" title="Gartner_Inc. Maverick* research: forget about your real data - synthetic data is the future of ai. URL: https://www.gartner.com/en/documents/4002912.">GartnerInc</a>]</span></span><a class="headerlink" href="#synthetic-data-will-completely-overshadow-real-data-in-ai-models" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition seealso">
@@ -826,19 +838,19 @@ title="Print to PDF"
 <p class="admonition-title">See also</p>
 <p><a class="reference external" href="https://github.com/open-academy/open-learning-resources/blob/main/README.md#dataset">Open Learning Resource - dataset</a> - a curated list of open-source/public datasets.</p>
 </div>
-<p><strong>More data is better?</strong> The answer is yes or no. No matter whether the Machine Learning performance increases monotonically<span id="id9">[<a class="reference internal" href="#id26" title="Michele Banko and Eric Brill. Scaling to very very large corpora for natural language disambiguation. In Proceedings of the 39th annual meeting of the Association for Computational Linguistics, 26–33. 2001.">BB01</a>]</span> or logarithmically<span id="id10">[<a class="reference internal" href="#id27" title="Chen Sun, Abhinav Shrivastava, Saurabh Singh, and Abhinav Gupta. Revisiting unreasonable effectiveness of data in deep learning era. In 2017 IEEE International Conference on Computer Vision (ICCV), volume, 843-852. 2017. doi:10.1109/ICCV.2017.97.">SSSG17</a>]</span> based on the volume of the training data size, more data is usually better. But this is not always the truth, because more data is not equal to better data if more noise is introduced. Also, the appearance of large public datasets like <a class="reference external" href="http://image-net.org/">Imagenet</a> and recent research advances makes data less of a competitive advantage.</p>
+<p><strong>More data is better?</strong> The answer is yes or no. No matter whether the Machine Learning performance increases monotonically<span id="id9">[<a class="reference internal" href="#id27" title="Michele Banko and Eric Brill. Scaling to very very large corpora for natural language disambiguation. In Proceedings of the 39th annual meeting of the Association for Computational Linguistics, 26–33. 2001.">BB01</a>]</span> or logarithmically<span id="id10">[<a class="reference internal" href="#id28" title="Chen Sun, Abhinav Shrivastava, Saurabh Singh, and Abhinav Gupta. Revisiting unreasonable effectiveness of data in deep learning era. In 2017 IEEE International Conference on Computer Vision (ICCV), volume, 843-852. 2017. doi:10.1109/ICCV.2017.97.">SSSG17</a>]</span> based on the volume of the training data size, more data is usually better. But this is not always the truth, because more data is not equal to better data if more noise is introduced. Also, the appearance of large public datasets like <a class="reference external" href="http://image-net.org/">Imagenet</a> and recent research advances makes data less of a competitive advantage.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference external" href="https://qr.ae/pv4GyP">In machine learning, is more data always better than better algorithms? | Quora</a></p>
 </div>
 </section>
 <section id="what-models-to-use">
-<h2><span class="section-number">21.2.3. </span>What models to use?<a class="headerlink" href="#what-models-to-use" title="Permalink to this headline">#</a></h2>
+<span id="id11"></span><h2><span class="section-number">23.2.3. </span>What models to use?<a class="headerlink" href="#what-models-to-use" title="Permalink to this headline">#</a></h2>
 <p>This is one of the most widely discussed topics when people approach a Machine Learning solution. There are three main categories of machine learning: supervised learning, unsupervised learning, and reinforcement learning. The cheat sheet from Microsoft could be a helpful quick reference.</p>
 <figure class="align-default" id="machine-learning-algorithm-cheat-sheet">
 <img alt="../_images/machine-learning-algorithm-cheat-sheet.png" src="../_images/machine-learning-algorithm-cheat-sheet.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 21.8 </span><span class="caption-text"><a class="reference external" href="https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet">Machine Learning Algorithm Cheat Sheet</a></span><a class="headerlink" href="#machine-learning-algorithm-cheat-sheet" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 23.8 </span><span class="caption-text"><a class="reference external" href="https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet">Machine Learning Algorithm Cheat Sheet</a></span><a class="headerlink" href="#machine-learning-algorithm-cheat-sheet" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition seealso">
@@ -848,7 +860,7 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html">Choosing the right estimator | scikit-learn</a></p></li>
 </ul>
 </div>
-<p><strong><a class="reference external" href="https://en.wikipedia.org/wiki/Automated_machine_learning">Automated machine learning (AutoML)</a></strong> is the process and method of automating the tasks of applying Machine Learning to real-world problems, which is another option to help select the algorithm. It makes Machine Learning available to non-experts, such as software engineers. Many open-source libraries could be leveraged for AutoML, such as <a class="reference external" href="https://auto.gluon.ai/">AutoGluon</a>, <a class="reference external" href="https://github.com/keras-team/autokeras">AutoKeras</a>.</p>
+<p><strong><a class="reference external" href="https://en.wikipedia.org/wiki/Automated_machine_learning">Automated Machine Learning (AutoML)</a></strong> is the process and method of automating the tasks of applying Machine Learning to real-world problems, which is another option to help select the algorithm. It makes Machine Learning available to non-experts, such as software engineers. Many open-source libraries could be leveraged for AutoML, such as <a class="reference external" href="https://auto.gluon.ai/">AutoGluon</a>, <a class="reference external" href="https://github.com/keras-team/autokeras">AutoKeras</a>.</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <ul class="simple">
@@ -860,48 +872,48 @@ title="Print to PDF"
 </div>
 </section>
 <section id="how-to-put-a-model-into-production">
-<h2><span class="section-number">21.2.4. </span>How to put a model into production?<a class="headerlink" href="#how-to-put-a-model-into-production" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">23.2.4. </span>How to put a model into production?<a class="headerlink" href="#how-to-put-a-model-into-production" title="Permalink to this headline">#</a></h2>
 <p>Machine Learning inference is the process of inputting data into a model to calculate an output, which is also referred to as “putting a Machine Learning model into production”. There are two major types of inferences that may impact the feasibility of productionize the trained model.</p>
 <p><strong>Batch inference</strong> means that multiple predictions are requested periodically. The <a class="reference external" href="https://covid19-projections.com/">COVID-19 Projections</a> project is typically a batch inference example, which is mentioned in the previous section. Another good example is Facebook News feed generation, which is a complex and time-consuming artificial intelligent process. The News feeds are pre-generated regularly and stored in the cache. Then the web application could request and present the cached feeds in runtime.</p>
 <p><strong>Online inference</strong>, on the contrary, is the process to handle the prediction in real-time, synchronized, or from continuous data streaming. The online inference is suitable for more latency-sensitive user scenarios such as search engines and autonomous driving. And it requires speeding up both the inferring and input data sampling. It should be noted that the inference is usually just part of the end-to-end workflow of serving a request from the client side. It will be more challenging if the reference is on the critical path.</p>
 </section>
 <section id="your-turn">
-<h2><span class="section-number">21.2.5. </span>Your turn! 🚀<a class="headerlink" href="#your-turn" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">23.2.5. </span>Your turn! 🚀<a class="headerlink" href="#your-turn" title="Permalink to this headline">#</a></h2>
 <p>Apply the knowledge of this section to refine <a class="reference external" href="overview.html#your-turn">your own Machine Learning project proposal</a>.</p>
 </section>
 <section id="self-study">
-<h2><span class="section-number">21.2.6. </span>Self study<a class="headerlink" href="#self-study" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">23.2.6. </span>Self study<a class="headerlink" href="#self-study" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://developers.google.com/machine-learning/problem-framing">Introduction to Machine Learning Problem Framing</a></p></li>
 </ul>
 <hr class="docutils" />
-<div class="docutils container" id="id11">
+<div class="docutils container" id="id12">
 <dl class="citation">
-<dt class="label" id="id24"><span class="brackets"><a class="fn-backref" href="#id7">And21</a></span></dt>
+<dt class="label" id="id25"><span class="brackets"><a class="fn-backref" href="#id7">And21</a></span></dt>
 <dd><p>Jason Anderson. Methods and applications of synthetic data generation. <em>All Dissertations</em>, 2021.</p>
 </dd>
-<dt class="label" id="id26"><span class="brackets"><a class="fn-backref" href="#id9">BB01</a></span></dt>
+<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id9">BB01</a></span></dt>
 <dd><p>Michele Banko and Eric Brill. Scaling to very very large corpora for natural language disambiguation. In <em>Proceedings of the 39th annual meeting of the Association for Computational Linguistics</em>, 26–33. 2001.</p>
 </dd>
-<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id1">CCalivaS+20</a></span></dt>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id1">CCalivaS+20</a></span></dt>
 <dd><p>Kaiyang Cheng, Francesco Calivá, Rutwik Shah, Misung Han, Sharmila Majumdar, and Valentina Pedoia. Addressing the false negative problem of deep learning mri reconstruction models by adversarial attacks and robust training. In <em>Medical Imaging with Deep Learning</em>, 121–135. PMLR, 2020.</p>
 </dd>
-<dt class="label" id="id23"><span class="brackets">GartnerInc</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id8">2</a>)</span></dt>
+<dt class="label" id="id24"><span class="brackets">GartnerInc</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id8">2</a>)</span></dt>
 <dd><p>Gartner_Inc. Maverick* research: forget about your real data - synthetic data is the future of ai. URL: <a class="reference external" href="https://www.gartner.com/en/documents/4002912">https://www.gartner.com/en/documents/4002912</a>.</p>
 </dd>
-<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id5">Lap78</a></span></dt>
+<dt class="label" id="id23"><span class="brackets"><a class="fn-backref" href="#id5">Lap78</a></span></dt>
 <dd><p>Daniel N Lapedes. <em>McGraw-Hill dictionary of scientific and technical terms</em>. McGraw-Hill Book Co., New York, NY, 1978.</p>
 </dd>
-<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id2">LXL+21</a></span></dt>
+<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id2">LXL+21</a></span></dt>
 <dd><p>Xuhong Li, Haoyi Xiong, Xingjian Li, Xuanyu Wu, Xiao Zhang, Ji Liu, Jiang Bian, and Dejing Dou. Interpretable deep learning: interpretation, interpretability, trustworthiness, and beyond. <em>arXiv preprint arXiv:2103.10689</em>, 2021.</p>
 </dd>
-<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id3">Paz20</a></span></dt>
+<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id3">Paz20</a></span></dt>
 <dd><p>Christina Pazzanese. Ethical concerns mount as ai takes bigger decision-making role. Dec 2020. URL: <a class="reference external" href="https://news.harvard.edu/gazette/story/2020/10/ethical-concerns-mount-as-ai-takes-bigger-decision-making-role/">https://news.harvard.edu/gazette/story/2020/10/ethical-concerns-mount-as-ai-takes-bigger-decision-making-role/</a>.</p>
 </dd>
-<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id4">SHG+14</a></span></dt>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id4">SHG+14</a></span></dt>
 <dd><p>D. Sculley, Gary Holt, Daniel Golovin, Eugene Davydov, Todd Phillips, Dietmar Ebner, Vinay Chaudhary, and Michael Young. Machine learning: the high interest credit card of technical debt. In <em>SE4ML: Software Engineering for Machine Learning (NIPS 2014 Workshop)</em>. 2014.</p>
 </dd>
-<dt class="label" id="id27"><span class="brackets"><a class="fn-backref" href="#id10">SSSG17</a></span></dt>
+<dt class="label" id="id28"><span class="brackets"><a class="fn-backref" href="#id10">SSSG17</a></span></dt>
 <dd><p>Chen Sun, Abhinav Shrivastava, Saurabh Singh, and Abhinav Gupta. Revisiting unreasonable effectiveness of data in deep learning era. In <em>2017 IEEE International Conference on Computer Vision (ICCV)</em>, volume, 843–852. 2017. <a class="reference external" href="https://doi.org/10.1109/ICCV.2017.97">doi:10.1109/ICCV.2017.97</a>.</p>
 </dd>
 </dl>
@@ -946,13 +958,13 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">21.1. </span>Overview</p>
+            <p class="prev-next-title"><span class="section-number">23.1. </span>Overview</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="data-engineering.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">21.3. </span>Data engineering</p>
+        <p class="prev-next-title"><span class="section-number">23.3. </span>Data engineering</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
